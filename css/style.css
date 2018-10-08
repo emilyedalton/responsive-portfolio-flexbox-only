@@ -1,23 +1,34 @@
 body{background-image:url(/responsive-portfolio-flexbox-only/images/topography.png);
  }
+ 
+ h1, h2, h3, h4, h5, h6 {
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	color:#11a099;
+}
 
-
+p, footer, form {
+    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+    color: #777777;
+}
+/* contains the nav  */
 .header{
 display:flex;
 flex-direction:row;
 justify-content:flex-end;}
 
+/* centers all of the divs */
 .center{
-background-color:red;
 width:960px;
 margin: auto;
 }
-
+/* begin nav */
 .single-nav ul{
-background-color: blue;
+background-color: white;
 display:flex;
 justify-content:flex-end;
 list-style-type: none;
+font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+font-size: 30px;
 }
 li:nth-child(1){
     margin-right: auto;
@@ -43,14 +54,61 @@ li:nth-child(1){
         font-family: 'Georgia', Times, Times New Roman, serif;
         font-size: 30px;
     }
+/* content box */
 .main_content{
     
     background-color:white;
     border: .5px solid #cccccc;
+    margin-top: 100px;
 }
-.footer{background-color:orange;
+.lineh1{ 
+   padding:30px;
+    max-width: 800px; 
+    margin: auto;
+    border-bottom: 2px solid #cccccc;
+    font-size: 30px;
+}
+.float {
+    float: left;
+    padding:5px;
+}
+.footer{
+    background-color:orange;
     margin: auto auto 0 auto;
     text-align:center;
     padding-top: 2em;
     margin-top: 7em;
     border-top: 5px solid #11a099;}
+
+/* Gallery */
+.gallery{
+    max-width: 600px;
+    background-color: white;
+    display:flex;
+    flex-wrap: wrap;
+    align-items:flex-start;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin:auto;
+}
+
+    .gallery-item {
+        margin: 10px;
+        text-decoration: none;
+    }
+    .text-wrapper {
+        width: 200px;
+        height:25px;
+        padding-top: 12.5px;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        color: white;
+        background-color:#11a099;
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        
+    }
+    .text-wrapper:hover {
+      background:#cccccc;
+      opacity: 1;
+    }
