@@ -1,17 +1,56 @@
-li a {color:white}
+body{background-image:url(/responsive-portfolio-flexbox-only/images/topography.png);
+ }
+
 
 .header{
-background-color:green;
 display:flex;
 flex-direction:row;
 justify-content:flex-end;}
 
 .center{
-background-color:red}
+background-color:red;
+width:960px;
+margin: auto;
+}
+
 .single-nav ul{
 background-color: blue;
 display:flex;
 justify-content:flex-end;
+list-style-type: none;
 }
-.main_content{background-color:purple;}
-.footer{background-color:orange}
+li:nth-child(1){
+    margin-right: auto;
+}
+    
+}
+.menustyle ul {
+    list-style-type: none;
+    margin: 0;
+ 
+ 
+  }
+    .menustyle li a {
+        display: block;
+        text-decoration: none;
+        color: #cccccc;
+        padding:.5em 1em;
+    }
+    
+    .menustyle li a:hover {
+        color:white;
+        background-color:#11a099;
+        font-family: 'Georgia', Times, Times New Roman, serif;
+        font-size: 30px;
+    }
+.main_content{
+    
+    background-color:white;
+    border: .5px solid #cccccc;
+}
+.footer{background-color:orange;
+    margin: auto auto 0 auto;
+    text-align:center;
+    padding-top: 2em;
+    margin-top: 7em;
+    border-top: 5px solid #11a099;}
