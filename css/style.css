@@ -1,0 +1,17 @@
+li a {color:white}
+
+.header{
+background-color:green;
+display:flex;
+flex-direction:row;
+justify-content:flex-end;}
+
+.center{
+background-color:red}
+.single-nav ul{
+background-color: blue;
+display:flex;
+justify-content:flex-end;
+}
+.main_content{background-color:purple;}
+.footer{background-color:orange}
