@@ -20,6 +20,7 @@ justify-content:flex-end;
 /* centers all of the divs */
 .center{
     display: flex;
+    /* width: 80%; */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -58,7 +59,7 @@ li:nth-child(1){
     }
 /* content box */
 .main_content{
-    
+    max-width: 75%;
     background-color:white;
     border: .5px solid #cccccc;
     margin-top: 100px;
@@ -118,6 +119,7 @@ li:nth-child(1){
     
     .myForm {
         display: flex;
+        width: 75%;
         padding: 1.8em;
       }
       .message {
@@ -128,12 +130,14 @@ li:nth-child(1){
       }
       .message > textarea {
        flex: 1; 
-       width: 85%;
+       min-width: 85%;
        /* min-width: 18em; */
        /* max-width: 870px; */
       }
       .contact {
-           flex: 1; 
+        width: 85%;
+
+           /* flex: 1;  */
       }
       .contact input {
       width: 85%;
@@ -149,7 +153,7 @@ li:nth-child(1){
        border: 0;
        margin-top: 10%;
       }
-      @media (max-width: 640px){
+      /* @media (max-width: 640px){
         body{ 
             background-color:black;
         }
@@ -165,5 +169,5 @@ li:nth-child(1){
         }
           
             }
-        }
+        } */
     
