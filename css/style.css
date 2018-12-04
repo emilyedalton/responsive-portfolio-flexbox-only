@@ -14,12 +14,17 @@ p, footer, form {
 .header{
 display:flex;
 flex-direction:row;
-justify-content:flex-end;}
+justify-content:flex-end;
+}
 
 /* centers all of the divs */
 .center{
-width:960px;
-margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+/* width:960px;
+margin: auto; */
 }
 /* begin nav */
 .single-nav ul{
@@ -34,12 +39,9 @@ li:nth-child(1){
     margin-right: auto;
 }
     
-}
 .menustyle ul {
     list-style-type: none;
     margin: 0;
- 
- 
   }
     .menustyle li a {
         display: block;
@@ -82,7 +84,7 @@ li:nth-child(1){
 
 /* Gallery */
 .gallery{
-    max-width: 600px;
+    width: 60%;
     background-color: white;
     display:flex;
     flex-wrap: wrap;
@@ -126,14 +128,15 @@ li:nth-child(1){
       }
       .message > textarea {
        flex: 1; 
-       min-width: 18em;
-       max-width: 870px;
+       width: 85%;
+       /* min-width: 18em; */
+       /* max-width: 870px; */
       }
       .contact {
            flex: 1; 
       }
       .contact input {
-      width: 850px;
+      width: 85%;
       }
       .contact input,
       .contact button {
@@ -146,17 +149,21 @@ li:nth-child(1){
        border: 0;
        margin-top: 10%;
       }
-      @media screen and (max-width: 768px){
+      @media (max-width: 640px){
+        body{ 
+            background-color:black;
+        }
+        .center{
+            width: 440px;
+        }
+      @media (max-width: 768px){
         body{ 
             background-color:black;
         }
         .center{
             width: 600px;
         }
-            @media screen and (max-width: 640px){
-                body{ 
-                    background-color:black;
-                }
-                .center{
-                    width: 440px;
-                }
+          
+            }
+        }
+    
