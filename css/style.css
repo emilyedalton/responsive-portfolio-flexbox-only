@@ -1,9 +1,8 @@
-body{background-image:url(/responsive-portfolio-flexbox-only/images/topography.png);
- }
+
  
  h1, h2, h3, h4, h5, h6 {
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	color:#11a099;
+	color:black;
 }
 
 p, footer, form {
@@ -101,7 +100,7 @@ li:nth-child(1){
     }
     .text-wrapper {
         width: 200px;
-        height:25px;
+       
         padding-top: 12.5px;
         font-family: 'Georgia', Times, Times New Roman, serif;
         color: white;
