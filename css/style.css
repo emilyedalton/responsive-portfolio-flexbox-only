@@ -159,6 +159,9 @@ li:nth-child(1){
       }
 
       @media screen and (device-width : 375px) {
+        .main_content{
+            max-width: 100%;
+        }
         .gallery{
             width: 100%;
             display: flex;
