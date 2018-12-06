@@ -12,36 +12,87 @@
 </head>
 <body>
         <div class = "center">
-        <nav class="single-nav menustyle">
-            <ul>
+        <div class="single-nav">
+           
                 <div class="myName">
-                <li><a href= "/responsive-portfolio-flexbox-only/assets/index.html" target = "_self">Emily Dalton</a></li>
+                <a href= "/responsive-portfolio-flexbox-only/assets/index.html" target = "_self">Emily Dalton</a>
             </div>
-                <div class="hamburger">
+                <div class="hamburger burgerExpand">
                         <i class="fas fa-bars"></i>
                       </div>
                       <div class="navSection">
-                <li><a href= "/responsive-portfolio-flexbox-only/assets/index.html" target ="_self">About</a></li>
+                        <div class = "navItem">
+               <a href= "/responsive-portfolio-flexbox-only/assets/index.html" target ="_self">About</a>
                 </div>
-                <div class="navSection">
-                <li><a href ="/responsive-portfolio-flexbox-only/assets/portfolio.html" target = "_self">Portfolio</a></li>
+                <div class="navItem">
+                <a href ="/responsive-portfolio-flexbox-only/assets/portfolio.html" target = "_self">Portfolio</a>
             </div>
-            <div class="navSection">
-
-                <li><a href ="/responsive-portfolio-flexbox-only/assets/contact.html" target = "_self">Contact</a></li>
+            <div class="navItem">
+                <a href ="/responsive-portfolio-flexbox-only/assets/contact.html" target = "_self">Contact</a>
                 </div>
-            </ul>
-        </nav>
+            </div><!-- end navSection -->
+            </div>
     <div class ="main_content">
         <h1 class= "lineh1">Portfolio</h1>
         <div class="gallery">
            
-                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Object Collector</h2><img src="/responsive-portfolio-flexbox-only/images/Obect_Collector.jpg" alt="Computer hands"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi velit quibusdam nulla aliquid possimus repellat suscipit distinctio facere nemo fugiat soluta nesciunt consectetur tempore, cumque qui voluptatum architecto perferendis vel.</p></a></div>
-                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>City Search</h2><img src="/responsive-portfolio-flexbox-only/images/GifAPI" alt="Computer hands"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi velit quibusdam nulla aliquid possimus repellat suscipit distinctio facere nemo fugiat soluta nesciunt consectetur tempore, cumque qui voluptatum architecto perferendis vel.</p></a></div>
-                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Chicago Style Trivia</h2><img src="/responsive-portfolio-flexbox-only/images/TriviaGame.jpg" alt="Computer hands"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi velit quibusdam nulla aliquid possimus repellat suscipit distinctio facere nemo fugiat soluta nesciunt consectetur tempore, cumque qui voluptatum architecto perferendis vel.</p></a></div>
-                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Train Scheduler</h2><img src="/responsive-portfolio-flexbox-only/images/Train_Shedule.jpg" alt="Computer hands"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi velit quibusdam nulla aliquid possimus repellat suscipit distinctio facere nemo fugiat soluta nesciunt consectetur tempore, cumque qui voluptatum architecto perferendis vel.</p></a></div>
-                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Food Finds (Group Assignment)</h2><img src="/responsive-portfolio-flexbox-only/images/project_1.jpg" alt="Computer hands"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi velit quibusdam nulla aliquid possimus repellat suscipit distinctio facere nemo fugiat soluta nesciunt consectetur tempore, cumque qui voluptatum architecto perferendis vel.</p></a></div>
-                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Letter Guess Game</h2><img src="/responsive-portfolio-flexbox-only/images/LetterGuessGame.jpg" alt="Computer hands"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi velit quibusdam nulla aliquid possimus repellat suscipit distinctio facere nemo fugiat soluta nesciunt consectetur tempore, cumque qui voluptatum architecto perferendis vel.</p></a></div>
+                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Object Collector</h2><img src="/responsive-portfolio-flexbox-only/images/Obect_Collector.jpg" alt="Object Collector"><p>Math.random statement generates a random number at the start of the game, while separate math.random statements generate random numbers for the objects displayed on the screen. The value of each object is hidden from from the user. If they successfully use the objects assigned values to match the generated number they win and the game resets, otherwise they lose and the game resets.</p>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        
+                        <li>CSS Flexbox</li>
+                        <li>JavaScript</li>
+                        <li>Objects drawn in Adobe Illustrator</li>
+
+                    </ul>
+                    </a></div>
+                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>City Search</h2><img src="/responsive-portfolio-flexbox-only/images/GifAPI" alt="City Search"><p>City Search uses the giphy API to make a dynamic web page that populates with gifs of a destination city. Using JQuery the site dynamically creates buttons based on user input, and a click event calls the giphy API to populate the the app with related gifs.</p>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>JQuery</li>
+                        <li>JavaScript</li>
+                        <li>CSS Flexbox</li>
+                        <li>CSS Grid</li>
+                        
+                    </ul>
+                    </a></div>
+                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Chicago Style Trivia</h2><img src="/responsive-portfolio-flexbox-only/images/TriviaGame.jpg" alt="Trivia Game"><p>
+                        A trivia game that shows only one question until the player answers it or their time runs out. setTimeout methods control the duration of time the user has to anser a question. A right or wrong answer will trigger a JQuery function that populates a div with a right or wrong answer gif.</p>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>CSS Flexbox</li>
+                        <li>JavaScript</li>
+                        <li>JQuery</li>
+
+                    </ul>
+                    </a></div>
+                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Train Scheduler</h2><img src="/responsive-portfolio-flexbox-only/images/Train_Shedule.jpg" alt="TrainGame"><p>A train schedule application that incorporates Firebase to host arrival and departure data. This app mainpulates user input about train arrivals and durations between trains with Moment.js. After pushing the data into firebase it retrieves the information about various trains and using moment.js displays their arrival times and how many minutes remain until they arrive at their station based on the current time.</p>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>CSS Flexbox</li>
+                        <li>CSS Grid</li>
+                        <li>Moment.js</li>
+                        <li>Firebase</li>
+                        <li>JavaScript</li>
+                        <li>JQuery</li>
+
+                    </ul>
+                    </a></div>
+                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Food Finds (Group Assignment)</h2><img src="/responsive-portfolio-flexbox-only/images/project_1.jpg" alt="Computer hands"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi velit quibusdam nulla aliquid possimus repellat suscipit distinctio facere nemo fugiat soluta nesciunt consectetur tempore, cumque qui voluptatum architecto perferendis vel.</p> 
+                    
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>CSS Flexbox</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    </a></div>
+                <div class="text-wrapper"><a class="gallery-item" href="#"><h2>Letter Guess Game</h2><img src="/responsive-portfolio-flexbox-only/images/LetterGuessGame.jpg" alt="Computer hands"><p>Simple game which dynamically updates HTML and CSS with JavaScript code. Random letter is generated using JavaScript. Each guessed letter is printed on the screen, and if guessed correctly, generated a win count. If guessed incorrectly increments a loss count. If the user guesses incorrectly 10 times, the game is reset to 0.</p>
+                    <h3>Technologies Used</h3>
+                    <ul>
+                        <li>CSS Flexbox</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    </a></div>
 
                 </div>
                 <a href="/responsive-portfolio-flexbox-only/assets/index.html">next</a>

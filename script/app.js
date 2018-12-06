@@ -3,10 +3,11 @@ $(document).ready(function() {
     autoTriggerUntil: 3,
     });
     });
+
     function classToggle() {
-        const navs = document.querySelectorAll('.single-nav')
+        const navs = document.querySelectorAll('.navSection')
         
-        navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
+        navs.forEach(nav => nav.classList.toggle('.hamburgerShow_burgerExpand'));
       }
       document.querySelector('.hamburger')
         .addEventListener('click', classToggle);
