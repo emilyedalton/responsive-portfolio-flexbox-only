@@ -103,7 +103,7 @@ margin: .3em;
 }
 .lineh1{ 
    padding:30px;
-    max-width: 800px; 
+    max-width:90%; 
     margin: auto;
     border-bottom: 2px solid #cccccc;
     font-size: 30px;
