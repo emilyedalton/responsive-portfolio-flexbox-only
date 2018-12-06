@@ -1,20 +1,26 @@
 
  
- h1, h2, h3, h4, h5, h6 {
-	font-family: 'Georgia', Times, Times New Roman, serif;
+ h1, h2, h3, h4, h5, h6, nav{
+    font-family: 'Noto Sans SC', sans-serif;
 	color:black;
 }
 
 p, footer, form {
-    font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
-    color: #777777;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color:black;
 }
 
 img {
     max-width: 100%;
     max-height:100%;
   }
-  
+
+
+
+a {font-family: 'Noto Sans SC', sans-serif;
+    text-decoration: none;
+}
+
 /* contains the nav  */
 /* .header{
 display:flex;
@@ -38,8 +44,9 @@ display:flex;
 width: 75%;
 justify-content:flex-start;
 list-style-type: none;
-font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+font-family: 'Noto Sans SC', sans-serif;
 font-size: 1em;
+
 }
 .navSection{ 
     display:flex;
@@ -51,7 +58,24 @@ font-size: 1em;
 margin: .3em;
 
 }
-.myName{width:100%;}
+.myName{
+    width:100%;
+  
+
+}
+
+.single-nav .navSection a {
+    display: block;
+    text-decoration: none;
+    color: black;
+
+}
+    .single-nav .myName a {
+    text-decoration: none;
+    color: black;
+
+}
+
 
 /*     
 .menustyle ul {
@@ -65,12 +89,8 @@ margin: .3em;
         padding:.5em 1em;
     } */
     
-    .menustyle li a:hover {
-        color:white;
-        background-color:#11a099;
-        font-family: 'Georgia', Times, Times New Roman, serif;
-        font-size: 30px;
-    }
+    
+    
     .hamburger {
         display: none;
       }
@@ -131,6 +151,10 @@ margin: .3em;
       background:#cccccc;
       opacity: 1;
     }
+    .technologies {
+        font-family: 'PT Sans Narrow', sans-serif;
+        color: black;
+    }
     /*Form*/
     
     .myForm {
@@ -170,6 +194,9 @@ margin: .3em;
        margin-top: 10%;
       }
 
+     /* begin media querries */
+
+    /* iPhone X specific */
       @media screen and (device-width : 375px) {
         .single-nav{ 
             max-width: 100%;
@@ -213,6 +240,8 @@ margin: .3em;
             cursor: pointer;
           }
         }
+
+        
       /* @media (max-width: 640px){
         body{ 
             background-color:black;
