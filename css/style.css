@@ -240,7 +240,52 @@ margin: .3em;
             cursor: pointer;
           }
         }
+        /* iPhone 8+ specific */
 
+        @media only screen and (device-width : 414px)  { 
+            .single-nav{ 
+                max-width: 100%;
+            }
+            .main_content{
+                max-width: 100%;
+            }
+            .gallery{
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+            }
+         
+             .text-wrapper {
+                width: 100%;
+                background-color:blue;
+    
+            }  
+            /* nav */
+            .single-nav {
+                flex-direction: column;
+                width: 100%;
+               
+              }
+              .myName{
+                  align-self: flex-start;
+                }
+              .navSection {
+                display:none;
+              }
+    
+              .hamburgerShow {
+                display: flex;
+              }
+    
+            .hamburger {
+                align-self: flex-end;
+                display: initial;
+                position: absolute;
+                cursor: pointer;
+              }
+            }
+         
         
       /* @media (max-width: 640px){
         body{ 
