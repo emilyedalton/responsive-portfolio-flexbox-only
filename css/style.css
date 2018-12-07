@@ -1,12 +1,12 @@
 
  
  h1, h2, h3, h4, h5, h6, nav{
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: 'Sonsie One', cursive;
 	color:black;
 }
 
 p, footer, form {
-    font-family: 'PT Sans Narrow', sans-serif;
+    font-family: 'Lato', sans-serif;
     color:black;
 }
 
@@ -44,8 +44,8 @@ display:flex;
 width: 75%;
 justify-content:flex-start;
 list-style-type: none;
-font-family: 'Noto Sans SC', sans-serif;
-font-size: 1em;
+font-family: 'Sonsie One', cursive;
+
 
 }
 .navSection{ 
@@ -59,6 +59,7 @@ margin: .3em;
 
 }
 .myName{
+    font-family: 'Sonsie One', cursive;
     width:100%;
   
 
@@ -75,7 +76,16 @@ margin: .3em;
     color: black;
 
 }
+.navText{
+    font-family: 'Sonsie One', cursive;
+    font-size: 1em;
 
+}
+.fixed {
+    position: fixed;
+    top:0; left:0;
+    margin: auto;
+    width: 75%; }
 
 /*     
 .menustyle ul {
