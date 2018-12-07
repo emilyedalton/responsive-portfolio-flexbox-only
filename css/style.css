@@ -182,8 +182,13 @@ margin: .3em;
 
     /* iPhone X specific */
       @media screen and (device-width : 375px) {
-        .single-nav{ 
-            max-width: 100%;
+         /* nav */
+         .single-nav {
+            flex-direction: column;
+            width: 100%;}
+        .navSection  {
+            flex-direction: column;
+            width: 100%;
         }
         .main_content{
             max-width: 100%;
@@ -200,12 +205,9 @@ margin: .3em;
             background-color: green;
 
         }  
-        /* nav */
-        .single-nav {
-            flex-direction: column;
-            width: 100%;
-           
-          }
+    }
+      
+          /* }
           .myName{
               align-self: flex-start;
             }
@@ -222,11 +224,19 @@ margin: .3em;
             display: initial;
             position: absolute;
             cursor: pointer;
-          }
-        }
+          } */
+        
         /* iPhone 8+ specific */
       
         @media only screen and (device-width : 414px)  { 
+            .single-nav {
+                flex-direction: column;
+                width: 100%;}
+            .navSection  {
+                flex-direction: column;
+                width: 100%;
+            } 
+
             .center{
                 display: flex;
                 flex-direction: column;
@@ -252,8 +262,9 @@ margin: .3em;
                 background-color:blue;
     
             }  
-            /* nav */
-            .single-nav {
+        }
+           
+            /* .single-nav {
                 flex-direction: column;
                 width: 100%;
                
@@ -275,7 +286,7 @@ margin: .3em;
                 position: absolute;
                 cursor: pointer;
               }
-            }
+            } */
          
         
       /* @media (max-width: 640px){
