@@ -98,7 +98,6 @@ margin: .3em;
 .main_content{
     max-width: 75%;
     background-color:white;
-    border: .5px solid #cccccc;
     margin-top: 100px;
 }
 .lineh1{ 
@@ -241,6 +240,12 @@ margin: .3em;
           }
         }
         /* iPhone 8+ specific */
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
 
         @media only screen and (device-width : 414px)  { 
             .single-nav{ 

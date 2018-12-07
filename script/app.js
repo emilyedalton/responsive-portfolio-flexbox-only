@@ -1,8 +1,15 @@
 $(document).ready(function() {
-    $('.main_content').jscroll({
-    autoTriggerUntil: 1,
-    });
-    });
+
+$('.main_content').infiniteScroll({
+  // options
+  path: '.pagination__next',
+  append: '.center',
+  history: false,
+});
+});
+
+   
+   
 
     function classToggle() {
         const navs = document.querySelectorAll('.navSection')
