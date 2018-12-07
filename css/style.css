@@ -1,6 +1,4 @@
-/* body { background-image: url("/responsive-portfolio-flexbox-only/images/bearPic.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed; */
+
 
  h1, h2, h3, h4, h5, h6, nav{
     font-family: 'Sonsie One', cursive;
@@ -26,8 +24,7 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-/* width:960px;
-margin: auto; */
+
 }
 /* begin nav */
 .single-nav {
@@ -80,14 +77,11 @@ margin: .3em;
     margin: auto;
     width: 75%; }
 
-.hamburger {
-        display: none;
-      }
+
 
 /* content box */
 .main_content{
     max-width: 75%;
-    /* background-color:white; */
     margin-top: 100px;
 }
 
@@ -97,10 +91,9 @@ margin: .3em;
 }
 
 
-/* Gallery */
-.gallery{
+/* Portfolio Gallery */
+    .gallery{
     width: 80%;
-    /* background-color: white; */
     display:flex;
     flex-wrap: wrap;
     align-items:flex-start;
@@ -113,6 +106,7 @@ margin: .3em;
         margin: 10px;
         text-decoration: none;
     }
+
     .text-wrapper {
         margin: .2%;
         width: 40%;
@@ -132,44 +126,7 @@ margin: .3em;
         font-family: 'PT Sans Narrow', sans-serif;
         color: black;
     }
-    /*Form*/
-    
-    .myForm {
-        display: flex;
-        width: 75%;
-        padding: 1.8em;
-      }
-      .message {
-       margin-right: 2em; 
-       display: flex;
-       flex-direction: column;
-
-      }
-      .message > textarea {
-       flex: 1; 
-       min-width: 85%;
-       /* min-width: 18em; */
-       /* max-width: 870px; */
-      }
-      .contact {
-        width: 85%;
-
-           /* flex: 1;  */
-      }
-      .contact input {
-      width: 85%;
-      }
-      .contact input,
-      .contact button {
-        padding: 1em;
-        margin-bottom: 1em;
-      }
-      .contact button {
-       background: #11a099;
-       color: white;
-       border: 0;
-       margin-top: 10%;
-      }
+   
 
      /* begin media querries */
 
@@ -198,7 +155,6 @@ margin: .3em;
      
          .text-wrapper {
             width: 100%;
-            background-color: green;
 
         }  
     }
@@ -233,6 +189,10 @@ margin: .3em;
                 width: 100%;
             } 
 
+            .myName {
+                font-size: 2em;
+            }
+
             .center{
                 display: flex;
                 flex-direction: column;
@@ -255,11 +215,91 @@ margin: .3em;
          
              .text-wrapper {
                 width: 100%;
-                background-color:blue;
     
             }  
         }
-           
+
+        @media (max-width: 640px){
+            
+        .single-nav {
+            flex-direction: column;
+            width: 100%;
+        }
+        .navSection  {
+            flex-direction: column;
+            width: 100%;
+        } 
+
+        .myName {
+            font-size: 2em;
+        }
+
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .single-nav{ 
+            max-width: 100%;
+        }
+        .main_content{
+            max-width: 100%;
+        }
+        .gallery{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+     
+         .text-wrapper {
+            width: 100%;
+
+        }  
+    
+    } 
+    @media (max-width: 768px){
+        .single-nav {
+            flex-direction: column;
+            width: 100%;
+        }
+        .navSection  {
+            flex-direction: column;
+            width: 100%;
+        } 
+
+        .myName {
+            font-size: 2em;
+        }
+
+        .center{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .single-nav{ 
+            max-width: 100%;
+        }
+        .main_content{
+            max-width: 100%;
+        }
+        .gallery{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+     
+         .text-wrapper {
+            width: 100%;
+
+        }  
+    
+    } 
             /* .single-nav {
                 flex-direction: column;
                 width: 100%;
