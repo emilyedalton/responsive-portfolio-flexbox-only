@@ -4,4 +4,4 @@
 * CSS Flexbox
 * JQuery
 * Javasript
-* [Infinate scroll JavaScript library (https://infinite-scroll.com/)]
+* Infinate scroll JavaScript library [(https://infinite-scroll.com/)]
