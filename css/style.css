@@ -73,7 +73,8 @@ margin: .3em;
 }
 .fixed {
     position: fixed;
-    top:0; left:0;
+    top:0; 
+    /* left:0; */
     margin: auto;
     width: 75%; }
 
@@ -159,25 +160,7 @@ margin: .3em;
         }  
     }
       
-          /* }
-          .myName{
-              align-self: flex-start;
-            }
-          .navSection {
-            display:none;
-          }
-
-          .hamburgerShow {
-            display: flex;
-          }
-
-        .hamburger {
-            align-self: flex-end;
-            display: initial;
-            position: absolute;
-            cursor: pointer;
-          } */
-        
+      
         /* iPhone 8+ specific */
       
         @media only screen and (device-width : 414px)  { 
@@ -300,46 +283,4 @@ margin: .3em;
         }  
     
     } 
-            /* .single-nav {
-                flex-direction: column;
-                width: 100%;
-               
-              }
-              .myName{
-                  align-self: flex-start;
-                }
-              .navSection {
-                display:none;
-              }
-    
-              .hamburgerShow {
-                display: flex;
-              }
-    
-            .hamburger {
-                align-self: flex-end;
-                display: initial;
-                position: absolute;
-                cursor: pointer;
-              }
-            } */
-         
-        
-      /* @media (max-width: 640px){
-        body{ 
-            background-color:black;
-        }
-        .center{
-            width: 440px;
-        }
-      @media (max-width: 768px){
-        body{ 
-            background-color:black;
-        }
-        .center{
-            width: 600px;
-        }
-          
-            }
-        } */
-    
+           

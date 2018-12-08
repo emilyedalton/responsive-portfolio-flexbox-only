@@ -20,10 +20,3 @@ $(window).scroll(function(){
 });
    
 
-    function classToggle() {
-        const navs = document.querySelectorAll('.navSection')
-        
-        navs.forEach(nav => nav.classList.toggle('.hamburgerShow_burgerExpand'));
-      }
-      document.querySelector('.hamburger')
-        .addEventListener('click', classToggle);
