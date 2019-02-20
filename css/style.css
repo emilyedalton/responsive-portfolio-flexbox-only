@@ -16,7 +16,9 @@ img {
     max-height:100%;
   }
 
-
+a{
+    text-decoration:none;
+}
 
 /* centers all of the divs */
 .center{
