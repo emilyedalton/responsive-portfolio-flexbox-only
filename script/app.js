@@ -20,3 +20,8 @@ $(window).scroll(function(){
 });
    
 
+$(".navItem").on("click",function(e){
+  e.preventDefault();
+  $('#contactModal').modal('show');
+})
+
