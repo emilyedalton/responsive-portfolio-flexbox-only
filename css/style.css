@@ -3,12 +3,17 @@ body, html {
     height: 100%;
     font-family: 'Archivo Narrow', sans-serif;
 
+} 
+
+a{
+    color: black;
+    font-variant: small-caps;
+
+    
 }
 
-.parallax-window {
-    min-height: 400px;
-    background: transparent;
-}
+
+
 
 #hero-image{
 background-image: url("./../images/Bridge.jpg");
@@ -44,13 +49,13 @@ z-index:1;
 
 }
 .slide{
-    padding:.5em;
+    padding:.7em;
     
   
 }
 .slide-img{
     float: left;
-    padding:.5em;
+    padding-right:.5em;
 }
 .slide-text{
     font-size: 2em;
@@ -226,7 +231,6 @@ margin: .3em;
                 left: 50%;
                 transform: translate(-60%, -40%);
                 color:white;
-            
                 font-family: 'Archivo Narrow', sans-serif;
            
         }
@@ -237,7 +241,7 @@ margin: .3em;
 
         }
         .slide-text{
-            font-size: 1em;
+            font-size: .7em;
             padding: .5em;
         }
     }
