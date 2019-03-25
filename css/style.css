@@ -230,7 +230,17 @@ margin: .3em;
                 font-family: 'Archivo Narrow', sans-serif;
            
         }
+        .slide-img{
+            float: none;
+           margin:auto;
+           max-height: 350px;
 
+        }
+        .slide-text{
+            font-size: 1em;
+            padding: .5em;
+        }
+    }
         @media (max-width: 640px){
             
         /* .single-nav {
