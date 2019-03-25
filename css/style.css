@@ -38,15 +38,24 @@ z-index:1;
 #about{
     /* content: ''; */
  font-size: 3em;
- background-color: rgb(236, 236, 59);
+ background-color:rgb(223, 186, 20);
  padding:.5em;
 
 
 }
-.new-div{
-position: relative;
+.slide{
+    padding:.5em;
+    
+  
 }
-
+.slide-img{
+    float: left;
+    padding:.5em;
+}
+.slide-text{
+    font-size: 2em;
+    padding: .5em;
+}
 
 /* .parallax {
 position: relative; */
