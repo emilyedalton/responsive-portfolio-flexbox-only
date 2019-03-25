@@ -76,7 +76,7 @@ position: relative; */
 
 } */
 /* begin nav */
-.single-nav {
+/* .single-nav {
 background-color: white;
 display:flex;
 width: 75%;
@@ -121,7 +121,7 @@ margin: .3em;
     position: fixed;
     top:0; 
     margin: auto;
-    width: 75%; }
+    width: 75%; } */
 
 
 
@@ -217,49 +217,23 @@ margin: .3em;
       
       
         /* iPhone 8+ specific */
-/*       
+       
         @media only screen and (device-width : 414px)  { 
-            .single-nav {
-                flex-direction: column;
-                width: 100%;}
-            .navSection  {
-                flex-direction: column;
-                width: 100%;
-            } 
-
-            .myName {
-                font-size: 2em;
-            }
-
-            .center{
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-            }
-    
-            .single-nav{ 
-                max-width: 100%;
-            }
-            .main_content{
-                max-width: 100%;
-            }
-            .gallery{
-                width: 100%;
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: space-between;
-            }
-         
-             .text-wrapper {
-                width: 100%;
-    
-            }  
+            .hero-text{
+                text-align: center;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-60%, -40%);
+                color:white;
+            
+                font-family: 'Archivo Narrow', sans-serif;
+           
         }
 
         @media (max-width: 640px){
             
-        .single-nav {
+        /* .single-nav {
             flex-direction: column;
             width: 100%;
         }
@@ -295,11 +269,11 @@ margin: .3em;
          .text-wrapper {
             width: 100%;
 
-        }  
+        }   */
     
     } 
     @media (max-width: 768px){
-        .single-nav {
+        /* .single-nav {
             flex-direction: column;
             width: 100%;
         }
@@ -335,7 +309,7 @@ margin: .3em;
          .text-wrapper {
             width: 100%;
 
-        }  
+        }   */
     
     } 
             
