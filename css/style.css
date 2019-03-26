@@ -66,6 +66,11 @@ text-align: center;
 
 
 }
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
 
 /* .parallax {
 position: relative; */
