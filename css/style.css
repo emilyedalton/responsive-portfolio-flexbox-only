@@ -14,7 +14,6 @@ a{
 
 
 
-
 #hero-image{
 background-image: url("./../images/Bridge.jpg");
 height: 100vh;
@@ -101,161 +100,49 @@ text-align: center;
     justify-content: space-evenly;
 }
 
-/* .parallax {
-position: relative; */
-/* height: 300px;  */
 
-
-/* centers all of the divs */
-/* .center{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-} */
-/* begin nav */
-/* .single-nav {
-background-color: white;
-display:flex;
-width: 75%;
-justify-content:flex-start;
-list-style-type: none;
-
-
-} 
-.navSection{ 
-    display:flex;
-    justify-content: flex-end;
-    width: 100%;
-  
-    
-} 
- .navItem{
-margin: .3em;
-
-}
-.myName{
-    width:100%;
-  
-
-}
-
-.single-nav .navSection a {
-    display: block;
-    text-decoration: none;
-    color: black;
-
-}
-    .single-nav .myName a {
-    text-decoration: none;
-    color: black;
-
-}
-.navText{
-    font-size: 1em;
-
-} 
- .fixed {
-    position: fixed;
-    top:0; 
-    margin: auto;
-    width: 75%; } */
-
-
-
-/* content box */
-/* .main_content{
-  max-width: 75%;
-    margin-top: 100px; 
-    position: absolute;
- top:100%; 
-     height: 100vh; 
-    margin: -5em 0 0 0; 
-    padding: 1em;
-    text-align: left;
-    font-size: 2em;
-    color: #333;
-    transform:translateY(50%);
-    z-index:2;
-}
-
-.float {
-    float: left;
-    padding:5px;
-}  */
-
-
-/* Portfolio Gallery */
-  /* .gallery{
-    width: 80%;
-    display:flex;
-    flex-wrap: wrap;
-    align-items:flex-start;
-    flex-direction: row;
-    justify-content: space-between;
-    margin:auto;
-}
-
-    .gallery-item {
-        margin: 10px;
-        text-decoration: none;
-    } 
-
- /* .text-wrapper {
-        margin: .2%;
-        width: 40%;
-        padding-top: 12.5px;
-        font-family: 'Georgia', Times, Times New Roman, serif;
-        color:black;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between; 
-        
-    }
-    .text-wrapper:hover {
-      background:#cccccc;
-      opacity: 1;
-    }
-    .technologies {
-        font-family: 'PT Sans Narrow', sans-serif;
-        color: black;
-    }   */
-   
-
-     /* begin media querries */
-
-    /* iPhone X specific */
-      /* @media screen and (device-width : 375px) { */
-         /* nav */
-         /* .single-nav {
-            flex-direction: column;
-            width: 100%;}
-        .navSection  {
-            flex-direction: column;
-            width: 100%;
-        }
-        .myName {
-            font-size: 2em;
-        }
-        .main_content{
-            max-width: 100%;
-        }
-        .gallery{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-     
-         .text-wrapper {
-            width: 100%;
-
-        }  
-    } */ 
-      
       
         /* iPhone 8+ specific */
+
+            /* iphone X */
+            @media only screen and (max-device-width: 375px)  {  
+
+                .hero-text{
+                    text-align: center;
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-60%, -40%);
+                    color:white;
+                    font-family: 'Archivo Narrow', sans-serif;
+               
+            }
+            .slide-img{
+                float: none;
+               /* margin:auto; */
+               max-height: 300px;
+        
+            }
+            .slide-text{
+                font-size: .7em;
+                /* padding: .5em;  */
+            } 
+            .outercard{
+                /* border: 2px solid red; */
+                display: flex;
+                flex-direction: column;
+            }
+            .tabular{
+                display:none  
+                }
+                .tabtext{
+                    display: none;
+            
+                }
+        
+        
+        
+            }
        
         @media only screen and (device-width : 414px)  { 
             .hero-text{
@@ -279,11 +166,17 @@ margin: .3em;
             /* padding: .5em;  */
         } 
         .outercard{
-            border: 2px solid red;
             display: flex;
             flex-direction: column;
         }
-    
+        .tabular{
+            display:none  
+            }
+            .tabtext{
+                display: none;
+        
+            }
+
         @media (max-width: 640px){
             
         /* .single-nav {
@@ -325,7 +218,7 @@ margin: .3em;
         }   */
     
     } 
-    @media (max-width: 768px){
+    /* @media (max-width: 768px){ */
         /* .single-nav {
             flex-direction: column;
             width: 100%;
@@ -364,5 +257,5 @@ margin: .3em;
 
         }   */
     
-    } 
+    /* }  */
             
