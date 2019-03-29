@@ -159,15 +159,12 @@ text-align: center;
                 display: flex;
                 flex-direction: column;
             }
-            .tabular{
-                display:none  
-                }
-                .tabtext{
-                    display: none;
-            
-                }
         
-        
+    
+                .tabular, .tabtext, .tabular2, .tabtext2{
+                    display:none  
+                    }
+                    
         
             }
        
@@ -196,14 +193,10 @@ text-align: center;
             display: flex;
             flex-direction: column;
         }
-        .tabular{
+        .tabular, .tabtext, .tabular2, .tabtext2{
             display:none  
             }
-            .tabtext{
-                display: none;
         
-            }
-
         @media (max-width: 640px){
             
         /* .single-nav {
