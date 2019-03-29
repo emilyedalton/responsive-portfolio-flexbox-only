@@ -6,12 +6,13 @@ body, html {
 } 
 
 a{
-    color: black;
-    font-variant: small-caps;
-
-    
+text-decoration: none;
+color: black;
 }
-
+a:hover {
+    text-decoration: underline;
+    color: black;
+  }
 
 
 #hero-image{
@@ -74,6 +75,32 @@ vertical-align:center;
 text-align:center;
 
 }
+
+.tabular2{
+    background-color:rgba(58, 57, 57, 0.8);
+    position: absolute; 
+    display:table;
+    bottom: 0;
+    left: 200px;
+    height: 50px;
+    width: 200px;
+    border-radius: 15px 15px 0px 0px;
+    
+    }
+    .tabtext2{
+    color:white;
+    display:table-cell;
+    vertical-align:center;
+    text-align:center;
+    
+    }
+    .tabtext2{
+    color:white;
+    display:table-cell;
+    vertical-align:center;
+    text-align:center;
+    
+    }
 .slide{
     padding:.7em;
     
