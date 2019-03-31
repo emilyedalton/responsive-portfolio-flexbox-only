@@ -257,7 +257,6 @@ text-align: center;
     .slide-img{
         float: none;
        /* margin:auto; */
-width:200px;
     }
     .slide-text{
         font-size: .7em;
@@ -266,7 +265,7 @@ width:200px;
     } 
     .outercard{
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
     }
     .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
         display:none  
