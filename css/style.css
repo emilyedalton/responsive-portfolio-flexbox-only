@@ -198,7 +198,7 @@ text-align: center;
             display: flex;
             flex-direction: column;
         }
-        .tabular, .tabtext, .tabular2, .tabtext2{
+        .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
             display:none  
             }
         
@@ -268,6 +268,8 @@ width:200px;
         display: flex;
         flex-direction: row;
     }
-    
+    .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
+        display:none  
+        }
     } 
             
