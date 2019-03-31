@@ -57,6 +57,9 @@ z-index:1;
 .innercard{
     /* border: 2px solid green; */
     position:relative;
+    word-wrap: break-word;
+    width: 67%;
+
 }
 .tabular{
 background-color:rgba(0, 0, 0, 0.8);
