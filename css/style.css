@@ -165,10 +165,9 @@ text-align: center;
                 flex-direction: column;
             }
         
-    
-                .tabular, .tabtext, .tabular2, .tabtext2{
-                    display:none  
-                    }
+            .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
+                display:none  
+                }
                     
         
             }
@@ -187,7 +186,7 @@ text-align: center;
         .slide-img{
             float: none;
            /* margin:auto; */
-           max-height: 350px;
+           /* max-height: 350px; */
 
         }
         .slide-text{
