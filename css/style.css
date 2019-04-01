@@ -195,7 +195,7 @@ text-align: center;
             }
                /* iPhone 8+ specific */
 
-        @media only screen and (device-width : 414px)  { 
+        @media only screen and (max-device-width : 414px)  { 
 
             a{
                 text-decoration: underline;
@@ -224,7 +224,7 @@ text-align: center;
                 width: 350px;
         }
         .slide-text{
-            font-size: 1.5em;
+            /* font-size: 1.5em; */
         } 
         .innercard{
             /* border: 2px solid green; */
@@ -233,7 +233,7 @@ text-align: center;
             width: 350px;
             margin: auto;
             overflow: none;
-            font-size: 1.5em;
+            font-size: .8em;
 
 
         
