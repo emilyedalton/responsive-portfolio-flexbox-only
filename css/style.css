@@ -136,7 +136,74 @@ text-align: center;
     flex-direction: row;
     justify-content: space-evenly;
 }
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+.cards {
+	margin: 1em;
+	padding: 0;
+	list-style-type: none;
+}
 
+.cards a {
+	display: block;
+	margin-bottom: 1em;
+	text-decoration: none;
+}
+
+.caption {
+	padding: 1em;
+	background: hsla(246, 40%, 30%, .6);
+	color: white;
+	font-size: 1.2em;
+	transition: all .4s;
+}
+
+a:focus .caption,
+a:hover .caption {
+	background: hsla(246, 40%, 30%, 1);
+}
+
+.caption-title {
+	margin: 0;
+	font-size: 1.4em;
+	line-height: 1.1em;
+}
+
+
+@supports (grid-area: auto){
+ 
+    @media screen and (min-width: 50em){
+        .cards{
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: .5em;
+        }
+    }
+    .card{ 
+        display: grid;
+        justify-content: center;
+    
+    
+    }
+    
+
+    .card > *{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .caption{
+        grid-column:1;
+        grid-row: 1;
+        display: flex;
+        align-items: flex-end;
+        opacity: 0;
+}
+a:focus .caption, 
+a:hover .caption { 
+    opacity: 1;
+}
 
       
 
@@ -183,7 +250,7 @@ text-align: center;
     
             }
             .outercard{
-                display: flex;
+                display: grid;
                 flex-direction: column;
             }
             .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
@@ -246,7 +313,37 @@ text-align: center;
 .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
     display:none  
     }
-
+    @supports (grid-area: auto){
+ 
+        @media screen and (min-width: 50em){
+            .cards{
+                display:grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: .5em;
+            }
+        }
+        .card{ 
+            display: grid;
+        
+        
+        }
+    
+        .card > *{
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        .caption{
+            grid-column:1;
+            grid-row: 1;
+            display: flex;
+            align-items: flex-end;
+            opacity: 0;
+    }
+    a:focus .caption, 
+    a:hover .caption { 
+        opacity: 1;
+    }
 }
                /* iPhone 8+ specific */
 

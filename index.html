@@ -40,6 +40,29 @@
 
                 <h1 class="centerHeader">This is some of my work ...</h1>
             </div>
+            <div class = "slide">
+                    <!-- <div class = "outercard"> -->
+                            <ul class="cards">
+                                    <li class="card-item">
+                                        <a href="#">
+                                            <figure class="card">
+                                                <img src="./images/burgers.jpg" height = "300px" alt="placeholder">
+                                                <figcaption class="caption">
+                                                <h3 class="caption-title">1</h3>
+                                                </figcaption>
+                                            </figure>
+                                            <li class="card-item">
+                                                    <a href="#">
+                                                        <figure class="card">
+                                                            <img src="./images/Memory_Game.jpg" height = "300px"alt="placeholder">
+                                                            <figcaption class="caption">
+                                                            <h3 class="caption-title">2</h3>
+                                                            </figcaption>
+                                                        </figure>
+                                        </a>
+                                    </li>
+                        <!-- </div> -->
+                    </div>
             <div class="slide">
                     <div class="outercard">
                     <img class="slide-img" src="./images/Book.jpg" alt="Memory_Game" height="500px">
@@ -55,6 +78,7 @@
                 </div>
              <!-- end slide -->
                 </div>
+               
             <div class="slide">
                 <div class = "outercard">
                 <img class="slide-img" src="./images/Memory_Game.jpg" alt="Memory_Game" height="500px">
@@ -187,6 +211,7 @@
                 <h1 class="centerHeader">More to come</h1>
             </div>
         </div>
+    
         <div class="section">
             <h1 class="centerHeader">Get in touch</h1>
             <div class="contact">
@@ -205,9 +230,10 @@
     <script type="text/javascript">
         var myFullpage = new fullpage('#fullpage', {
             slidesNavigation:true,
-            controlArrows:false,
+            controlArrows:true,
             responsiveSlides: true,
             resize:true,
+            scrollOverflow:true,
 
             sectionsColor: ['rgb(236, 236, 59)', 'rgb(223, 186, 20)', 'whitesmoke', 'whitesmoke', '#ccddff'],
             // controlArrows: False,
