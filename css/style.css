@@ -5,16 +5,26 @@ body, html {
 
 } 
 
-a{
-text-decoration: none;
-color: black;
-}
-a:hover {
-    text-decoration: underline;
-    color: black;
-    transform: scale(1.2); 
-  }
+button {
+    background: none;
+    border: 1px solid white;
+    position: relative;
+    height: 3em;
+    margin: 1em;
+    color: white;
+    font-size: 1em;
+    }
+    button:hover{
+        background: rgba(246, 246, 248, 0.4);
 
+    }
+img {
+    display: block;
+    border: 0;
+    width: 100%;
+    height: auto;
+
+}
 
 #hero-image{
 background-image: url("./../images/Bridge.jpg");
@@ -49,79 +59,18 @@ z-index:1;
 
 
 }
-.outercard{
-    /* border: 2px solid red; */
-    display: flex;
-    flex-direction: row;
-}
-.innercard{
-    /* border: 2px solid green; */
-    position:relative;
-    word-wrap: break-word;
-    width: 67%;
-    overflow: none;
-
-}
-.tabular{
-background-color:rgba(0, 0, 0, 0.8);
-position: absolute; 
-display:table;
-bottom: 0;
-left: 0;
-height: 50px;
-width: 200px;
-border-radius: 15px 15px 0px 0px;
-
-}
-.tabtext{
-color:white;
-display:table-cell;
-vertical-align:center;
-text-align:center;
-
-}
-
-.tabular2{
-    background-color:rgba(58, 57, 57, 0.8);
-    position: absolute; 
-    display:table;
-    bottom: 0;
-    left: 200px;
-    height: 50px;
-    width: 200px;
-    border-radius: 15px 15px 0px 0px;
-    
+#portfolio{
+    font-size:3em  
     }
-    .tabtext2{
-    color:white;
-    display:table-cell;
-    vertical-align:center;
-    text-align:center;
-    
-    }
-    .tabular3{
-        background-color: rgba(210, 215, 211, 0.7);
-        position: absolute; 
-        display:table;
-        bottom: 0;
-        left: 400px;
-        height: 50px;
-        width: 200px;
-        border-radius: 15px 15px 0px 0px;
-        
-        }
+
       
 .slide{
-    padding:.7em;
+    padding:1em;
     
   
 }
-.slide-img{
-    float: left;
-    margin-right:1em; 
-    box-shadow: 0px 1px 20px 10px rgba(0, 0, 0, 0.2);
-    height: 400px;
-}
+
+
 .slide-text{
     font-size: 2em;
     /* padding: .5em; */
@@ -136,8 +85,106 @@ text-align: center;
     flex-direction: row;
     justify-content: space-evenly;
 }
+.contact-image{
+    height: 120px;
+    width: 120px;
+
+}
+/*--------------------------------------------------------------
+Cards:
+--------------------------------------------------------------*/
+.cards {
+	/* margin: 1em; */
+	padding: 0;
+    list-style-type: none;
+    object-fit: cover;
+    width: 100%;
+}
+
+.cards .gray {
+	display: block;
+	margin-bottom: 1em;
+    text-decoration: none;
+}
+
+.caption {
+	padding: 1em;
+	background: rgba(76, 75, 78, 0.6);
+	color: white;
+	font-size: 1em;
+    transition: all .4s;
+    grid-column:1;
+    grid-row: 1;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.gray:focus .caption caption,
+.gray:hover .caption {
+    background:  rgba(76, 75, 78, 0.9);
+    
+}
+
+.caption-title {
+	margin: auto;
+    font-size: 4em;
+    align-items: center;
+    line-height: 1.1em;
+    opacity: 0;
+    color: white;
+
+}
 
 
+@supports (grid-area: auto){
+ 
+    @media screen and (min-width: 50em){
+        .cards{
+            display:grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: .5em;
+        }
+    }
+    .card{ 
+        display: grid;
+        justify-content: center;
+    
+    
+    }
+    
+
+    .card > *{
+        grid-column: 1;
+        grid-row: 1;
+    }
+
+    .caption{
+        grid-column:1;
+        grid-row: 1;
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+}
+.caption-title {
+	margin: auto;
+    font-size: 3em;
+    align-items: center;
+    line-height: 1.1em;
+    opacity: 0;
+
+}
+.gray:focus .caption, 
+.gray:hover .caption { 
+    opacity: 1;
+}
+.gray:hover .caption-title{
+    opacity: 1;
+}
+
+.controlArrow.next {
+    color:black;
+}
       
 
             /* iphone X */
@@ -162,37 +209,17 @@ text-align: center;
                 
               
             }
-            .slide-img{
-                    float: none;
-                    margin: auto;
-                    box-shadow: 0px 1px 20px 10px rgba(0, 0, 0, 0.2);
-                    height: 300px;
-                    width: 300px;
-            }
+          
+        
             .slide-text{
                 font-size: 1.5em;
             } 
-            .innercard{
-                /* border: 2px solid green; */
-                position:relative;
-                word-wrap: break-word;
-                width: 300px;
-                margin: auto;
-                overflow: none;
-                font-size: 1em;
-    
-            }
-            .outercard{
-                display: flex;
-                flex-direction: column;
-            }
-            .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
-                display:none  
-                }
-            
+           
+          
                     
         
             }
+
             @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
@@ -246,7 +273,37 @@ text-align: center;
 .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
     display:none  
     }
-
+    @supports (grid-area: auto){
+ 
+        @media screen and (min-width: 50em){
+            .cards{
+                display:grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-gap: .5em;
+            }
+        }
+        .card{ 
+            display: grid;
+        
+        
+        }
+    
+        .card > *{
+            grid-column: 1;
+            grid-row: 1;
+        }
+    
+        .caption{
+            grid-column:1;
+            grid-row: 1;
+            display: flex;
+            align-items: flex-end;
+            opacity: 0;
+    }
+    a:focus .caption, 
+    a:hover .caption { 
+        opacity: 1;
+    }
 }
                /* iPhone 8+ specific */
 
@@ -308,138 +365,6 @@ text-align: center;
         }
         @media (max-width: 640px){
             
-        /* .single-nav {
-            flex-direction: column;
-            width: 100%;
-        }
-        .navSection  {
-            flex-direction: column;
-            width: 100%;
-        } 
-
-        .myName {
-            font-size: 2em;
-        }
-
-        .center{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .single-nav{ 
-            max-width: 100%;
-        }
-        .main_content{
-            max-width: 100%;
-        }
-        .gallery{
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
-        }
-     
-         .text-wrapper {
-            width: 100%;
-
-        }   */
-    
-    } 
-    /* @media (max-width: 768px){
-
-                 
-            .hero-text{
-                text-align: center;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-60%, -40%);
-                color:white;
-                font-family: 'Archivo Narrow', sans-serif;
-           
-        }
-        .slide{
-            padding:0px;
-            
-          
-        }
-        .slide-img{
-                float: none;
-                margin: auto;
-                box-shadow: 0px 1px 20px 10px rgba(0, 0, 0, 0.2);
-                height: 350px;
-                width: 350px;
-        }
-        .slide-text{
-            font-size: 1em;
-        } 
-        .innercard{
-            position:relative;
-            word-wrap: break-word;
-            width: 350px;
-            height: 350px;
-            margin: auto;
-            overflow: none;
-
-
-        
-        }
-        .outercard{
-            display: flex;
-            flex-direction: row;
-        }
-        .tabular{
-            background-color:rgba(0, 0, 0, 0.8);
-            position: absolute; 
-            display:table;
-            bottom: 0;
-            left: 0;
-            height: 30px;
-            width: 100px;
-            border-radius: 10px 10px 0px 0px;
-            
-            }
-            .tabtext{
-            color:white;
-            display:table-cell;
-            vertical-align:center;
-            text-align:center;
-            font-size: .7em
-
-            
-            }
-            
-            .tabular2{
-                background-color:rgba(58, 57, 57, 0.8);
-                position: absolute; 
-                display:table;
-                bottom: 0;
-                left: 100px;
-                height: 30px;
-                width: 100px;
-                border-radius: 10px 10px 0px 0px;
-                }
-                .tabtext2{
-                color:white;
-                display:table-cell;
-                vertical-align:center;
-                text-align:center;
-                font-size: .7em
-                
-                }
-                .tabular3{
-                    background-color: rgba(210, 215, 211, 0.7);
-                    position: absolute; 
-                    display:table;
-                    bottom: 0;
-                    left: 200px;
-                    height: 30px;
-                    width: 100px;
-                    border-radius: 10px 10px 0px 0px;
-                    
-                    } */
       
             
         
