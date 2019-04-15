@@ -112,6 +112,15 @@ text-align:center;
     
   
 }
+button {
+    background: none;
+    border: 1px solid white;
+    position: relative;
+    height: 3em;
+    margin: 1em;
+    color: white;
+    font-size: 1em;
+    }
 img {
     display: block;
     border: 0;
@@ -170,19 +179,24 @@ Cards:
     grid-column:1;
     grid-row: 1;
     justify-content: center;
+    align-items: flex-end;
 
 }
 
-.gray:focus .caption,
+.gray:focus .caption caption,
 .gray:hover .caption {
-    background:  rgba(76, 75, 78, 0.6);
+    background:  rgba(76, 75, 78, 0.9);
     
 }
 
 .caption-title {
-	margin: 0;
-	font-size: 1.4em;
-	/* line-height: 1.1em; */
+	margin: auto;
+    font-size: 4em;
+    align-items: center;
+    line-height: 1.1em;
+    opacity: 0;
+    color: white;
+
 }
 
 
@@ -215,11 +229,21 @@ Cards:
         justify-content: center;
         opacity: 0;
 }
-.gray :focus .caption, 
-.gray :hover .caption { 
+.caption-title {
+	margin: auto;
+    font-size: 3em;
+    align-items: center;
+    line-height: 1.1em;
+    opacity: 0;
+
+}
+.gray:focus .caption, 
+.gray:hover .caption { 
     opacity: 1;
 }
-
+.gray:hover .caption-title{
+    opacity: 1;
+}
       
 
             /* iphone X */
@@ -244,13 +268,8 @@ Cards:
                 
               
             }
-            .slide-img{
-                    float: none;
-                    margin: auto;
-                    box-shadow: 0px 1px 20px 10px rgba(0, 0, 0, 0.2);
-                    height: 300px;
-                    width: 300px;
-            }
+          
+        
             .slide-text{
                 font-size: 1.5em;
             } 
