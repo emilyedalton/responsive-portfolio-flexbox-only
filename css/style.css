@@ -62,9 +62,9 @@ z-index:1;
 
 
 }
-#portfolio{
-    font-size:3em  
-    }
+.portfolio{
+    font-size:3em; 
+text-align: center;    }
 
       
 .slide{
@@ -75,7 +75,7 @@ z-index:1;
 
 
 .slide-text{
-    font-size: 2em;
+    /* font-size: 2em; */
     /* padding: .5em; */
 }
 .centerHeader{
@@ -94,10 +94,9 @@ text-align: center;
 
 }
 /*--------------------------------------------------------------
-Cards:
+Slide Display:
 --------------------------------------------------------------*/
 .cards {
-	/* margin: 1em; */
 	padding: 0;
     list-style-type: none;
     object-fit: cover;
@@ -114,7 +113,7 @@ Cards:
 	padding: 1em;
 	background: rgba(76, 75, 78, 0.6);
 	color: white;
-	font-size: 1em;
+	/* font-size: 1em; */
     transition: all .4s;
     grid-column:1;
     grid-row: 1;
@@ -131,7 +130,7 @@ Cards:
 
 .caption-title {
 	margin: auto;
-    font-size: 4em;
+    /* font-size: 4em; */
     align-items: center;
     line-height: 1.1em;
     opacity: 0;
@@ -171,7 +170,7 @@ Cards:
 }
 .caption-title {
 	margin: auto;
-    font-size: 3em;
+    font-size: 2em;
     align-items: center;
     line-height: 1.1em;
     opacity: 0;
