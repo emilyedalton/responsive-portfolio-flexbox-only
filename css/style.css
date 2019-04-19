@@ -253,7 +253,7 @@ a:hover .caption {
 
             /* iphone X */
             @media only screen and (max-device-width: 375px)  {  
-                
+                #fullpage{max-width: 370px;}
 
                 .hero-text{
                     text-align: center;
@@ -265,16 +265,7 @@ a:hover .caption {
                     font-family: 'Archivo Narrow', sans-serif;
                
             }
-            .slide{
-                padding:0px;
-                
-              
-            }
-          
-        
-            .slide-text{
-                font-size: 1.5em;
-            } 
+           
            
           
                     
@@ -290,7 +281,9 @@ a:hover .caption {
                and (max-device-width: 736px) 
                and (-webkit-min-device-pixel-ratio: 3)
                and (orientation: portrait) { 
-             
+                #fullpage{max-width: 410px;
+                }
+
                 #hero-image{
                     background-image: url("./../images/Bridge.jpg");
                     height: 100vh;
