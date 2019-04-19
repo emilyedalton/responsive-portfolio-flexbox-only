@@ -65,7 +65,12 @@ z-index:1;
 .tall{
     height: 800px;
     min-height: 800px;
-}
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content:center;
+
+    }
 .portfolio{
     font-size:3em; 
 text-align: center;    }
@@ -149,14 +154,12 @@ Slide Display:
             display:grid;
             grid-template-columns: repeat(2, 1fr);
             grid-gap: .5em;
-            border: 2px solid blue;
 
         }
     }
     .card{ 
         display: grid;
         justify-content: center;
-        border: 2px solid red;
     
     
     }
