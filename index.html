@@ -213,14 +213,17 @@
         var myFullpage = new fullpage('#fullpage', {
             sectionSelector: '.vertical-scrolling',
             responsiveSlides: true,
-            // responsiveWidth: 200,
-            resize: true,
+         
             anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
             css3: true,
             scrollOverflow: true,
             scrollBar: true,
             sectionsColor: ['rgb(236, 236, 59)', 'rgb(223, 186, 20)', 'whitesmoke', 'whitesmoke', '#ccddff'],
-              
+            responsiveWidth: 1100,
+        afterResponsive: function(isResponsive){
+
+        },
+            resize: true, 
         });
     </script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.0.js">integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
