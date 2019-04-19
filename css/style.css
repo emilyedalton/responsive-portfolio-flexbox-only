@@ -310,7 +310,8 @@ Slide Display:
                and (-webkit-min-device-pixel-ratio: 3)
                and (orientation: portrait) { 
              
-             
+             img{            width: 300;
+             }
             a{
                 text-decoration: underline;
                 color: black;
@@ -340,26 +341,20 @@ Slide Display:
         .slide-text{
             font-size: 1em;
         } 
-        .innercard{
-            /* border: 2px solid green; */
+        .card{
+            display: flex;
+            flex-direction: column;
             position:relative;
             word-wrap: break-word;
-            width: 350px;
+            width: 300;
             margin: auto;
             overflow: none;
             /* font-size: .8em; */
 
 
         
-        }
-        .outercard{
-            display: flex;
-            flex-direction: column;
-        }
-        .tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
-            display:none  
-            }
-        }
+      }
+       
         @media (max-width: 640px){
             
       
