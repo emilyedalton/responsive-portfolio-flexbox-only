@@ -71,25 +71,17 @@ z-index:1;
     align-content:center;
 
     }
-.portfolio{
+.portfoliohead{
     font-size:3em; 
 text-align: center;    }
 
+.portfolio{
+    font-size:2em; 
+text-align: center;   
+ }
       
-.slide{
-    padding:1em;
-    border: 2px solid salmon;
-    
-  
-}
 
 
-
-.centerHeader{
-text-align: center;
-
-
-}
 .contact{
     display: flex;
     flex-direction: row;
@@ -107,8 +99,6 @@ Slide Display:
 	padding: 0;
     list-style-type: none;
     object-fit: cover;
-    width: 500px;
-    border: 2px solid green;
 }
 
 .cards .gray {
@@ -140,7 +130,7 @@ Slide Display:
 	margin: auto;
     /* font-size: 4em; */
     align-items: center;
-    line-height: 1.1em;
+    line-height: 1em;
     opacity: 0;
     color: white;
 
