@@ -182,14 +182,11 @@ Slide Display:
 .gray:hover .caption-title{
     opacity: 1;
 }
-
-.controlArrow.next {
-    color:black;
 }
-      
+  
 
 
-            @media only screen 
+ @media only screen 
   and (min-device-width: 375px) 
   and (max-device-width: 667px) 
   and (-webkit-min-device-pixel-ratio: 2)
@@ -217,39 +214,7 @@ Slide Display:
    
 }
 
-@supports (grid-area: auto){
- 
-    @media screen and (min-width: 50em){
-        .cards{
-            display:grid;
-            grid-template-columns: repeat(8, 1fr);
-            grid-gap: .5em;
-        }
-    }
-    .card{ 
-        display: grid;
-    
-    
-    }
-
-    .card > *{
-        grid-column: 1;
-        grid-row: 1;
-        
-    }
-
-    .caption{
-        grid-column:1;
-        grid-row: 1;
-        display: flex;
-        align-items: flex-end;
-        opacity: 0;
-}
-a:focus .caption, 
-a:hover .caption { 
-    opacity: 1;
-}
-}
+  }
 
             /* iphone X */
             @media only screen and (max-device-width: 375px)  {  
@@ -334,17 +299,13 @@ a:hover .caption {
             }
         }
        
-        }
+        
        
-        } 
+        
     
 
 
         
       
-       
-        @media (max-width: 640px){
-            
-      
-        }    
+         
         
