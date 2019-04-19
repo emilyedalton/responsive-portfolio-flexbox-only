@@ -306,7 +306,7 @@ a:hover .caption {
         }
         .caption-title {
             margin: auto;
-            font-size: 2em;
+            font-size: 1em;
             align-items: center;
             line-height: 1.1em;
             opacity: 0;
