@@ -221,14 +221,7 @@ Slide Display:
                 body{max-width: 370px;}
 
                 #hero-image{
-                    background-image: url("./../images/Bridge.jpg");
-                    height: 100vh;
-                    position: relative;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size:cover;
-                    background-attachment: fixed;
-                    z-index:1;
+                    display:none;
                     }        
 
                 .hero-text{
@@ -269,14 +262,7 @@ Slide Display:
                 }
 
                 #hero-image{
-                    background-image: url("./../images/Bridge.jpg");
-                    height: 100vh;
-                    position: relative;
-                    background-position: center;
-                    background-repeat: no-repeat;
-                    background-size:cover;
-                    background-attachment: fixed;
-                    z-index:1;
+                    display:none;
                     }        
             .hero-text{
                 text-align: center;
