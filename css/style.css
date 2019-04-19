@@ -271,8 +271,6 @@ a:hover .caption {
                     
         
             }
-
-
     
                /* iPhone 8+ specific */
 
@@ -281,7 +279,8 @@ a:hover .caption {
                and (max-device-width: 736px) 
                and (-webkit-min-device-pixel-ratio: 3)
                and (orientation: portrait) { 
-                body{max-width: 410px;
+               
+                body{max-width: 413px;
                 }
 
                 #hero-image{
@@ -304,17 +303,16 @@ a:hover .caption {
                 font-family: 'Archivo Narrow', sans-serif;
            
         }
-        .slide{
-            padding:0px;
-            
-          
+        .caption-title {
+            margin: auto;
+            font-size: 2em;
+            align-items: center;
+            line-height: 1.1em;
+            opacity: 0;
+        
         }
-        .slide-img{
-                float: none;
-                margin: auto;
-                box-shadow: 0px 1px 20px 10px rgba(0, 0, 0, 0.2);
-                height: 350px;
-                width: 350px;
+        }
+       
         }
        
         } 
@@ -322,10 +320,10 @@ a:hover .caption {
 
 
         
-      }
+      
        
         @media (max-width: 640px){
             
       
-            
+        }    
         
