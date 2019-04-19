@@ -62,6 +62,10 @@ z-index:1;
 
 
 }
+.tall{
+    height: 800px;
+    min-height: 800px;
+}
 .portfolio{
     font-size:3em; 
 text-align: center;    }
@@ -69,6 +73,7 @@ text-align: center;    }
       
 .slide{
     padding:1em;
+    border: 2px solid salmon;
     
   
 }
@@ -97,7 +102,8 @@ Slide Display:
 	padding: 0;
     list-style-type: none;
     object-fit: cover;
-    width: 100%;
+    width: 500px;
+    border: 2px solid green;
 }
 
 .cards .gray {
@@ -139,28 +145,31 @@ Slide Display:
 @supports (grid-area: auto){
  
     @media screen and (min-width: 50em){
-        .cards{
+        #grid-container{
             display:grid;
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-gap: .5em;
+            border: 2px solid blue;
+
         }
     }
     .card{ 
         display: grid;
         justify-content: center;
+        border: 2px solid red;
     
     
     }
     
 
     .card > *{
-        grid-column: 1;
-        grid-row: 1;
+        grid-column: 2;
+        grid-row: 2;
     }
 
     .caption{
-        grid-column:1;
-        grid-row: 1;
+        grid-column:2;
+        grid-row: 2;
         display: flex;
         justify-content: center;
         opacity: 0;
@@ -275,7 +284,7 @@ Slide Display:
         @media screen and (min-width: 50em){
             .cards{
                 display:grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(8, 1fr);
                 grid-gap: .5em;
             }
         }
@@ -288,6 +297,7 @@ Slide Display:
         .card > *{
             grid-column: 1;
             grid-row: 1;
+            
         }
     
         .caption{
