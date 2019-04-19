@@ -269,9 +269,7 @@ Slide Display:
     display: flex;
     flex-direction: column;
 }
-.tabular, .tabtext, .tabular2,.tabular3, .tabtext2{
-    display:none  
-    }
+
     @supports (grid-area: auto){
  
         @media screen and (min-width: 50em){
