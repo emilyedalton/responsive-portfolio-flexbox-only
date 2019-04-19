@@ -316,18 +316,9 @@ a:hover .caption {
                 height: 350px;
                 width: 350px;
         }
-        .slide-text{
-            font-size: 1em;
+       
         } 
-        .card{
-            display: flex;
-            flex-direction: column;
-            position:relative;
-            word-wrap: break-word;
-            width: 300;
-            margin: auto;
-            overflow: none;
-            /* font-size: .8em; */
+    
 
 
         
