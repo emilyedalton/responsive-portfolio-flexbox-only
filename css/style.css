@@ -280,10 +280,11 @@ a:hover .caption {
                and (-webkit-min-device-pixel-ratio: 3)
                and (orientation: portrait) { 
                
-                body{max-width: 413px;
+                body{
+                    max-width: 413px;
                 }
 
-                #hero-image{
+                /* #hero-image{
                     background-image: url("./../images/Bridge.jpg");
                     height: 100vh;
                     position: relative;
@@ -292,7 +293,7 @@ a:hover .caption {
                     background-size:cover;
                     background-attachment: fixed;
                     z-index:1;
-                    }        
+                    }         */
             .hero-text{
                 text-align: center;
                 position: absolute;
