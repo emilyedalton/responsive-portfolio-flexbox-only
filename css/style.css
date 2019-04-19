@@ -62,24 +62,26 @@ z-index:1;
 
 
 }
-.portfolio{
+.tall{
+    height: 800px;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-content:center;
+
+    }
+.portfoliohead{
     font-size:3em; 
 text-align: center;    }
 
+.portfolio{
+    font-size:2em; 
+text-align: center;   
+ }
       
-.slide{
-    padding:1em;
-    
-  
-}
 
 
-
-.centerHeader{
-text-align: center;
-
-
-}
 .contact{
     display: flex;
     flex-direction: row;
@@ -97,7 +99,6 @@ Slide Display:
 	padding: 0;
     list-style-type: none;
     object-fit: cover;
-    width: 100%;
 }
 
 .cards .gray {
@@ -129,7 +130,7 @@ Slide Display:
 	margin: auto;
     /* font-size: 4em; */
     align-items: center;
-    line-height: 1.1em;
+    line-height: 1em;
     opacity: 0;
     color: white;
 
@@ -139,10 +140,11 @@ Slide Display:
 @supports (grid-area: auto){
  
     @media screen and (min-width: 50em){
-        .cards{
+        #grid-container{
             display:grid;
-            grid-template-columns: repeat(1, 1fr);
+            grid-template-columns: repeat(2, 1fr);
             grid-gap: .5em;
+
         }
     }
     .card{ 
@@ -154,13 +156,13 @@ Slide Display:
     
 
     .card > *{
-        grid-column: 1;
-        grid-row: 1;
+        grid-column: 2;
+        grid-row: 2;
     }
 
     .caption{
-        grid-column:1;
-        grid-row: 1;
+        grid-column:2;
+        grid-row: 2;
         display: flex;
         justify-content: center;
         opacity: 0;
@@ -275,7 +277,7 @@ Slide Display:
         @media screen and (min-width: 50em){
             .cards{
                 display:grid;
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(8, 1fr);
                 grid-gap: .5em;
             }
         }
@@ -288,6 +290,7 @@ Slide Display:
         .card > *{
             grid-column: 1;
             grid-row: 1;
+            
         }
     
         .caption{
